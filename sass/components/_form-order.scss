@@ -1,0 +1,141 @@
+.order {
+  display: flex;
+  flex-direction: column;
+}
+
+.order__label {
+  position: relative;
+  margin-bottom: 10px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+
+  color: var(--secondary-text-color);
+}
+
+.order__text-input {
+  width: 448px;
+  height: 40px;
+  padding-left: 42px;
+  margin-top: 4px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
+}
+
+.order__icon {
+  position: absolute;
+  left: 12px;
+  bottom: 11px;
+  width: 18px;
+  height: 18px;
+
+  .order__text-input:hover + &,
+  .order__text-input:focus + & {
+    fill: var(--accent-color);
+  }
+}
+
+.order__feedback {
+  width: 448px;
+  height: 120px;
+  padding: 12px 16px;
+  margin-top: 4px;
+  /* margin-bottom: 20px; */
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  outline: none;
+
+  border-radius: 4px;
+  resize: none;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14p1, 17;
+  letter-spacing: 0.01em;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-text-color);
+}
+
+.order__checkbox {
+  margin-right: 10px;
+  position: absolute;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.order__checkbox-icon {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+
+  background-color: transparent;
+
+  border: 2px solid var(--primary-text-color);
+  border-radius: 2px;
+
+  .order__checkbox:checked + & {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    background-image: url(../images/icon-check.svg);
+    background-size: contain;
+    background-origin: border-box;
+  }
+
+  .order__checkbox:hover + &,
+  .order__checkbox:focus + & {
+    border-color: var(--accent-color);
+  }
+}
+
+.order__terms-confirm {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  &:visited {
+    color: var(--accent-color);
+  }
+}
+
+.order__button {
+  width: 200px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+
+  letter-spacing: 0.06em;
+
+  color: var(--third-text-color);
+}
