@@ -3,15 +3,42 @@
 
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @media screen and (max-width: 479px) {
+    text-align: center;
+  }
 }
 
 .footer-container {
-  display: flex;
-  align-items: baseline;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.tablet-wrap {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
 }
 
 .footer-info {
-  margin-right: 70px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
 }
 
 .footer-contact {
@@ -33,6 +60,16 @@
 .join {
   width: 206px;
   height: 80px;
+
+  @media screen and (max-width: 767px) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .join__title {
@@ -77,17 +114,25 @@
 }
 
 .subscribe {
-  margin-left: auto;
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
 }
 
 .subscribe__form {
-  display: flex;
-  align-items: flex-end;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: flex-end;
+  }
 }
 
 .subscribe__label {
   display: flex;
   flex-direction: column;
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 
   font-weight: 700;
   font-size: 14px;
@@ -98,7 +143,21 @@
 
 .subscribe__input {
   margin-top: 20px;
-  width: 358px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
+
   height: 50px;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -117,7 +176,12 @@
 
   width: 200px;
   height: 50px;
-  margin-left: 12px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+  }
 
   font-weight: 700;
   font-size: 16px;
