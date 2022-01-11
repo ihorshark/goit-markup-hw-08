@@ -21,6 +21,12 @@
 }
 
 .advantage__item {
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 30px) / 2);
     &:nth-child(-n + 2) {
@@ -29,8 +35,6 @@
   }
 
   @media screen and (min-width: 1200px) {
-    width: 270px;
-
     &:not(:last-child) {
       margin-right: 30px;
     }

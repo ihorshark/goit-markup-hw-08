@@ -50,8 +50,10 @@
   transform: translateX(0);
 }
 
-.mobile-nav__list {
-  margin-bottom: 302px;
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .mobile-nav__item-link {
@@ -74,6 +76,11 @@
   letter-spacing: 0.02em;
 
   color: var(--accent-color);
+}
+
+.mobile-nav__wrap {
+  position: absolute;
+  bottom: 0;
 }
 
 .mobile-nav__social {
