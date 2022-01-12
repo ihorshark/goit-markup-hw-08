@@ -17,6 +17,10 @@
 }
 
 .tablet-wrap {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-around;
@@ -64,7 +68,6 @@
   @media screen and (max-width: 767px) {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 60px;
   }
 
   @media screen and (max-width: 1199px) {

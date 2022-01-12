@@ -6,6 +6,7 @@
   justify-content: center;
 
   margin: 0;
+  margin-left: auto;
   padding: 0;
   background-color: transparent;
   cursor: pointer;
@@ -53,7 +54,7 @@
 .mobile-nav {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .mobile-nav__item-link {
